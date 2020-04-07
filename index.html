@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valutaomvandlare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body class="bg-dark">
+    <br />
+    <div
+      class="card text-white bg-primary mb-3 mx-auto"
+      style="max-width: 60rem;"
+    >
+      <div class="card-header text-center">
+        <h5 class="card-title">Valutaomvandlare</h5>
+      </div>
+      <div class="card-body text-center">
+        <table id="selectListTable">
+          <tr>
+            <th id="tableHeader">Basvaluta</th>
+            <th></th>
+            <th id="tableHeader">Motvaluta</th>
+          </tr>
+          <tr>
+            <td>
+              <select class="form-control" id="selectBas"> </select>
+            </td>
+            <td>
+              <button type="button" class="btn btn-secondary" id="buttonSwitch">
+                < >
+              </button>
+            </td>
+            <td>
+              <select class="form-control" id="selectMot"> </select>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <table id="inputBoxTable">
+          <tr>
+            <th id="inputBoxHeader"></th>
+            <td id="inputBoxData">
+              <input class="form-control" type="number" id="inputBas" />
+            </td>
+            <th id="headerBas">Bas</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <input class="form-control" type="text" id="outputMot" readonly />
+            </td>
+            <th id="headerMot">Mot</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+#centering {
+  display: block;
+  margin: auto;
+  width: 60rem;
+}
+
+#selectListTable {
+  width: 98%;
+  margin-left: auto;
+}
+
+#tableHeader {
+  width: 42%;
+}
+
+#inputBoxTable {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inputBoxHeader {
+  width: 15%;
+}
+
+#inputBoxData {
+  width: 70%;
+}
+
+#headerBas {
+  width: 15%;
+}
